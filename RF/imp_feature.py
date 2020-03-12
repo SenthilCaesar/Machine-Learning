@@ -2,7 +2,10 @@ import pandas as pd
 import numpy as np
 
 features = pd.read_csv('cluster_right_RF.csv')
+
+# YBOCS is the target variable
 labels = np.array(features['YBOCS'])
+
 features= features.drop('YBOCS', axis = 1)
 
 # Saving feature names for later use
